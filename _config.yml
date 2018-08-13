@@ -6,10 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: WngLMng
-email: wnglmng@qq.com
+title: Kevin
+email: 535772263@qq.com
 description: >
-  嗨，我是王立明，一名来自黑龙江省鹤岗市的男生。现于无线生活（北京），从事互联网开发工作。
+  嗨，我是Kevin，一名来自江苏南通的男生。现于居住于上海，从事互联网开发工作。
 logo: "/assets/images/logo.jpg"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wnglmng.com" # the base hostname & protocol for your site
@@ -17,7 +17,7 @@ paginate:	10 # The number of posts to show per page on your homepage
 
 name: 'WngLMng'
 bio: >
-  嗨，我是王立明，一名来自黑龙江省鹤岗市的男生。现于无线生活（北京），从事互联网开发工作。
+  嗨，我是Kevin，一名来自江苏南通的男生。现于居住于上海，从事互联网开发工作。
 author_image: "/assets/images/author.jpg"
 github_username:  WngLMng
 
