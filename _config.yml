@@ -15,7 +15,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wnglmng.com" # the base hostname & protocol for your site
 paginate:	10 # The number of posts to show per page on your homepage
 
-name: 'WngLMng'
+name: 'Kevin'
 bio: >
   嗨，我是Kevin，一名来自江苏南通的男生。现于居住于上海，从事互联网开发工作。
 author_image: "/assets/images/author.jpg"
