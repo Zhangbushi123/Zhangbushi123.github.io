@@ -6,63 +6,55 @@ card-image:     https://ww1.sinaimg.cn/mw690/906cb9dbgw1fayoxw9jh0j20b407e3zn.jp
 date:           2018-08-28 19:00:00
 tags:           life
 post-card-type: image
----
-# annotation(@Target@Retention@Inherited@Documented)详解 #
- 
+--- 
 ## 注解：深入理解JAVA注解 ##
 
 　　要深入学习注解，我们就必须能定义自己的注解，并使用注解，在定义自己的注解之前，我们就必须要了解Java为我们提供的元注解和相关定义注解的语法。
    
 ## 元注解（meta-annotation）：
-    作用：负责注释其他注解，被用来提供对其他annotation类型进行说明元注解：
-    @Retention
-    @Inherited
-    @Documented
-    @Target    
+   作用：负责注释其他注解，被用来提供对其他annotation类型进行说明元注解：<br>
+   @Retention<br>
+   @Inherited<br>
+   @Documented<br>
+   @Target<br>    
 1. @Target<br>
           
-         作用：@Target说明了Annotation所修饰的对象范围：Annotation可被用于 packages、types（类、接口、枚举、Annotation类型）、类型成员（方法、构造方法、成员变量、枚举值）、方法参数和本地变量（如循环变量、catch参数）。在Annotation类型的声明中使用了target可更加明晰其修饰的目标。
-         枚举类：
-               public enum ElementType {
-                 /** 用于描述类、接口(包括注解类型) 或enum声明 */
-                 TYPE,
-
-                 /** 字段声明（包括枚举常量） */
-                FIELD,
-
-                /** 方法声明(Method declaration) */
-                 METHOD,
-
-                /** 正式的参数声明 */
-                PARAMETER,
-
-                /** 构造函数声明 */
-                CONSTRUCTOR,
-
-                /** 局部变量声明 */
-                LOCAL_VARIABLE,
-
-                /** 注释类型声明 */
-                ANNOTATION_TYPE,
-
-                /** 包声明 */
-                PACKAGE,
-
-                /**
-                 * 类型参数声明
-                *
-                * @since 1.8
-                */
-                TYPE_PARAMETER,
-
-                /**
-                * 使用的类型
-                *
-                * @since 1.8
-                */
-                TYPE_USE
-               }
-           说明：注解只能在ElementType设定的范围内使用，否则将会编译报错。例如：范围只包含ElementType.METHOD ，则表明该注解只能使用在类的方法上，超出使用范围将编译异常。
+   作用：@Target说明了Annotation所修饰的对象范围：Annotation可被用于 packages、types                                                                                                     
+  &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;（类、接口、枚举、Annotation类型）、类型成员（方法、构造方法、成员变量、枚举值）、方法参  
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;数和本地变量（如循环变量、catch参数）。在Annotation类型的声明中使用了target可更加明晰其修  
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;饰的目标。  
+   枚举类：　　  
+ 　　　　　`public enum ElementType {　  
+   　　　　/** 用于描述类、接口(包括注解类型) 或enum声明 */  
+　　　　　　TYPE,  
+　　　　　　/** 字段声明（包括枚举常量） */  
+　　　　　　FIELD,  
+　　　　　　/** 方法声明(Method declaration) */  
+　　　　　　METHOD,  
+　　　　　　/** 正式的参数声明 */  
+　　　　　　PARAMETER,  
+　　　　　　/** 构造函数声明 */  
+　　　　　　CONSTRUCTOR,  
+　　　　　　/** 局部变量声明 */  
+　　　　　　LOCAL_VARIABLE,  
+　　　　　　/** 注释类型声明 */  
+　　　　　　ANNOTATION_TYPE,  
+　　　　　　/** 包声明 */  
+ 　　　　　　PACKAGE,  
+　　　　　　/**  
+　　　　　　* 类型参数声明  
+　　　　　　*    
+　　　　　　* @since 1.8  
+　　　　　　*/  
+　　　　　　TYPE_PARAMETER,  
+　　　　　　/**  
+　　　　　　* 使用的类型  
+　　　　　　*   
+　　　　　　* @since 1.8  
+　　　　　　*/  
+　　　　　　TYPE_USE  
+　　　　　　}`
+说明：注解只能在ElementType设定的范围内使用，否则将会编译报错。例如：范围只包含　　　　　　      &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;ElementType.METHOD ，则表明该注解只能使用在类的方法上，超出使用范围将编译异常。                                             
     
 2. @Retention<br>       
          
